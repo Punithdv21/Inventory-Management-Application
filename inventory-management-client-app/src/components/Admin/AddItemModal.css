@@ -1,0 +1,88 @@
+/* Modal Styles */
+.custom-modal .ant-modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Header */
+.custom-modal .ant-modal-header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+    padding: 16px;
+}
+
+/* Modal Body */
+.custom-modal .ant-modal-body {
+    padding: 24px;
+}
+
+/* Form Item Styles */
+.ant-form-item-label > label {
+    font-weight: bold;
+    color: #333;
+}
+
+.ant-form-item .ant-input,
+.ant-form-item .ant-input-number,
+.ant-form-item .ant-input-textarea {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.ant-form-item .ant-input:focus,
+.ant-form-item .ant-input:hover,
+.ant-form-item .ant-input-number:focus,
+.ant-form-item .ant-input-number:hover,
+.ant-form-item .ant-input-textarea:focus,
+.ant-form-item .ant-input-textarea:hover {
+    border-color: #1e90ff;
+    box-shadow: 0 0 8px rgba(30, 144, 255, 0.5);
+}
+
+/* Button Styles */
+.custom-button {
+    background: #1e90ff;
+    border-color: #1e90ff;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 48px;
+}
+
+.custom-button:hover,
+.custom-button:focus {
+    background: #00bfff;
+    border-color: #00bfff;
+}
+
+.cancel-button {
+    background: #ff4d4f;
+    border-color: #ff4d4f;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 48px;
+    color: white;
+}
+
+.cancel-button:hover,
+.cancel-button:focus {
+    background: #ff7875;
+    border-color: #ff7875;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .custom-modal .ant-modal-body {
+        padding: 16px;
+    }
+
+    .custom-button,
+    .cancel-button {
+        width: 100%;
+    }
+}

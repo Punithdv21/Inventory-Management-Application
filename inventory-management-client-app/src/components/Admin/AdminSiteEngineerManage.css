@@ -1,0 +1,115 @@
+/* AdminSiteEngineerManage.css */
+
+/* Layout and Content Styles */
+.admin-site-engineer-manage {
+  display: flex;
+  background: #f0f2f5; /* Light background color */
+  min-height: 100vh; /* Full height */
+}
+
+.main-content {
+  margin-left: auto; /* Adjust as per your Sidebar width */
+  width: calc(100% - 200px); /* Adjust based on sidebar width */
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-engineer-manager {
+  margin: 24px;
+  padding: 24px;
+  background: #fff; /* White background for content area */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.admin-engineer-manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.admin-engineer-manager-data-title {
+  margin-bottom: 0;
+  color: #1890ff; /* Text color for the title */
+  font-size: 24px; /* Larger font size for title */
+  font-weight: bold; /* Bold font weight */
+}
+
+.button-container {
+  text-align: right;
+}
+
+.table-container {
+  overflow: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Styles */
+.ant-modal-body {
+  padding: 24px;
+}
+
+.ant-modal-content {
+  border-radius: 8px;
+}
+
+/* Button Styles */
+.ant-btn-primary {
+  background-color: #1890ff; /* Primary button background color */
+  border-color: #1890ff; /* Primary button border color */
+  margin-right: 8px; /* Adds spacing between buttons */
+  font-weight: bold; /* Bold font weight */
+  text-transform: uppercase; /* Uppercase text */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background-color: #40a9ff; /* Primary button hover color */
+  border-color: #40a9ff; /* Primary button hover border color */
+}
+
+.ant-btn-link {
+  color: #1890ff; /* Link button text color */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.ant-btn-link:hover,
+.ant-btn-link:focus {
+  color: #40a9ff; /* Link button hover color */
+}
+
+/* Table Styles */
+.ant-table {
+  border-radius: 8px;
+  overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f0f2f5; /* Header background color */
+  font-weight: bold; /* Bold font weight for headers */
+  color: #333; /* Header text color */
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid #f0f0f0; /* Table row border color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .main-content {
+    width: 100%; /* Full width on smaller screens */
+    margin-left: 0;
+  }
+
+  .admin-engineer-manager {
+    margin: 12px;
+    padding: 12px;
+  }
+
+  .admin-engineer-manager-data-title {
+    font-size: 20px; /* Adjusted font size for smaller screens */
+  }
+}

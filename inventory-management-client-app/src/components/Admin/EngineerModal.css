@@ -1,0 +1,99 @@
+/* EngineerModal.css */
+
+/* Modal Styles */
+.engineer-modal .ant-modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(231, 30, 30, 0.1);
+}
+
+/* Modal Header Styles */
+.engineer-modal .ant-modal-header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    padding: 12px 2px; /* Padding for better spacing */
+    display: flex; /* Ensure flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center align items vertically */
+}
+
+.engineer-modal .ant-modal-header .ant-modal-title {
+    flex: 1; /* Grow to fill available space */
+    text-align: center; /* Center align the title */
+}
+
+.engineer-modal .ant-modal-header .ant-modal-close-x {
+    margin-right: -8px; /* Adjust negative margin for better alignment */
+}
+
+/* Modal Body Styles */
+.engineer-modal .ant-modal-body {
+    padding: 24px;
+}
+
+/* Form Item Styles */
+.engineer-modal .ant-form-item-label > label {
+    font-weight: bold;
+    color: #333; /* Text color */
+}
+
+.engineer-modal .ant-form-item .ant-input,
+.engineer-modal .ant-form-item .ant-input-password {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.engineer-modal .ant-form-item .ant-input:focus,
+.engineer-modal .ant-form-item .ant-input:hover,
+.engineer-modal .ant-form-item .ant-input-password:focus,
+.engineer-modal .ant-form-item .ant-input-password:hover {
+    border-color: #1890ff;
+    box-shadow: 0 0 5px rgba(24, 144, 255, 0.5);
+}
+
+/* Button Styles */
+.engineer-modal .submit-button {
+    background: #1890ff;
+    border-color: #1890ff;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 48px;
+}
+
+.engineer-modal .submit-button:hover,
+.engineer-modal .submit-button:focus {
+    background: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.engineer-modal .close-button {
+    background: #f5222d;
+    border-color: #f5222d;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 48px;
+    color: white;
+}
+
+.engineer-modal .close-button:hover,
+.engineer-modal .close-button:focus {
+    background: #ff4d4f;
+    border-color: #ff4d4f;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .engineer-modal .ant-modal-body {
+        padding: 16px;
+    }
+
+    .engineer-modal .submit-button,
+    .engineer-modal .close-button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,166 @@
+/* AdminLabourmgnt.css */
+
+/* Layout and Content Styles */
+.site-layout {
+  margin-left: auto; /* Adjust as per your Sidebar width */
+  min-height: auto;
+  background: #f0f2f5; /* Light background color */
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin: 24px;
+  padding: 24px;
+  background: #fff; /* White background for content area */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.page-title {
+  margin-bottom: 0;
+  color: #1890ff; /* Text color for the title */
+}
+
+.button-container {
+  text-align: right;
+}
+
+.table-container {
+  overflow: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Styles */
+.ant-modal-body {
+  padding: 24px;
+}
+
+/* Optional: Adjust modal width as needed */
+.ant-modal-content {
+  border-radius: 8px;
+}
+
+/* Button Styles */
+.ant-btn-primary {
+  background-color: #1890ff; /* Primary button background color */
+  border-color: #1890ff; /* Primary button border color */
+  margin-right: 8px; /* Adds spacing between buttons */
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background-color: #40a9ff; /* Primary button hover color */
+  border-color: #40a9ff; /* Primary button hover border color */
+}
+
+.ant-btn-link {
+  color: #1890ff; /* Link button text color */
+}
+
+.ant-btn-link:hover,
+.ant-btn-link:focus {
+  color: #40a9ff; /* Link button hover color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .site-layout {
+    margin-left: 0;
+  }
+}
+/* AdminLabourmgnt.css */
+
+/* Custom styles for Form */
+.ant-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f0f2f5; /* Light background color */
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Custom styles for Form items */
+.ant-form-item {
+  margin-bottom: 24px;
+}
+
+/* Custom styles for Form labels */
+.ant-form-item-label {
+  font-weight: bold;
+  color: #333; /* Dark label color */
+}
+
+/* Custom styles for Form inputs */
+.ant-input,
+.ant-input-number {
+  border-color: #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Larger font size */
+  padding: 12px; /* Padding inside inputs */
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Custom styles for Form submit button */
+.labor-modal-submit-button,
+.labor-modal-cancel-button {
+  margin-top: 24px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.labor-modal-submit-button {
+  background-color: #1890ff; /* Primary color */
+  border-color: #1890ff;
+  color: #fff; /* Text color */
+}
+
+.labor-modal-submit-button:hover {
+  background-color: #40a9ff; /* Lighter shade on hover */
+  border-color: #40a9ff;
+}
+
+.labor-modal-cancel-button {
+  color: #666; /* Darker text color */
+  border-color: #d9d9d9;
+}
+
+.labor-modal-cancel-button:hover {
+  color: #333; /* Darker text color on hover */
+  border-color: #bfbfbf; /* Slightly darker border */
+}
+
+/* Custom styles for Modal */
+.ant-modal-body {
+  padding: 24px;
+}
+
+/* Custom styles for Modal title */
+.ant-modal-title {
+  text-align: center;
+  font-size: 24px; /* Larger title font size */
+  color: #1890ff; /* Primary color */
+}
+
+/* Custom styles for Modal buttons */
+.ant-modal-footer {
+  border-top: none;
+  text-align: right;
+}
+
+/* Custom styles for Modal cancel button */
+.ant-modal-footer .ant-btn-primary {
+  margin-right: 8px;
+}

@@ -1,0 +1,69 @@
+/* Admindashboard.css */
+
+/* Sider Styles */
+.ant-layout-sider {
+  background-color: #001529; /* Dark background color */
+}
+
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+/* Menu Item Styles */
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-menu-item-group-list {
+  color: #fff; /* Text color */
+}
+
+/* Content Area Styles */
+.site-layout {
+  margin-left: 10px; /* Adjust margin for Sider */
+}
+
+.site-layout-background {
+  background: #fff; /* Content background color */
+  padding: 24px;
+}
+
+.admin-dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.admin-dashboard-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  margin: 40px;
+}
+
+.admin-dashboard-button {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: #f7875b; /* Button background color */
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s;
+}
+
+.admin-dashboard-button:hover {
+  background-color: #e6f7ff; /* Button hover background color */
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+.admin-dashboard-button-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}

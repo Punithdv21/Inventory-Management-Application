@@ -1,0 +1,142 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Darker overlay for focus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Ensure it's above other content */
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal Content */
+.modal-content {
+    background: rgba(255, 255, 255, 0.95); /* Slightly opaque for a subtle effect */
+    padding: 60px; /* Generous padding for spacing */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 600px; /* Increased max width */
+    width: 100%;
+    max-height: 90vh; /* Height limit to prevent overflow */
+    overflow-y: auto; /* Vertical scroll if needed */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    position: relative;
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: slideIn 0.4s forwards; /* Slide in animation */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Close Button */
+.modal-close-button {
+    position: absolute;
+    top: -20px; /* Move outside of the modal to avoid overlap */
+    right: -20px; /* Move outside of the modal to avoid overlap */
+    background: #ff4d4d; /* Vibrant red for visibility */
+    border: none;
+    border-radius: 50%; /* Circular shape */
+    width: 50px; /* Increased size */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Larger font */
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.2s, transform 0.2s;
+    z-index: 1060; /* Ensure it's above modal content */
+}
+
+.modal-close-button:hover {
+    background: #ff1a1a; /* Darker red on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Responsive Modal Adjustments */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 95%; /* Wider on smaller screens */
+        padding: 30px; /* Less padding */
+    }
+
+    .modal-close-button {
+        width: 40px; /* Slightly smaller on mobile */
+        height: 40px;
+        font-size: 20px; /* Adjust font size */
+    }
+}
+
+/* Modal Form Elements */
+.modal-content form input,
+.modal-content form textarea,
+.modal-content form button {
+    width: calc(100% - 20px); /* Subtract padding for alignment */
+    margin: 10px 0;
+    padding: 15px; /* Larger padding for comfort */
+    border: 1px solid #ccc; /* Softer border */
+    border-radius: 5px; /* Rounded edges */
+    font-size: 16px; /* Readable text size */
+    box-sizing: border-box; /* Ensure no overflow */
+    background: rgba(255, 255, 255, 0.8); /* Transparent background */
+    backdrop-filter: blur(4px); /* Subtle blur */
+}
+
+.modal-content form input:focus,
+.modal-content form textarea:focus {
+    border-color: #007bff; /* Focus border color */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.modal-content form button {
+    background-color: #28a745; /* Vibrant green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Larger for emphasis */
+    padding: 15px 20px; /* Adjusted padding */
+    margin-top: 15px; /* Spacing for button */
+}
+
+.modal-content form button:hover {
+    background-color: #218838; /* Darker on hover */
+}
+
+/* Modal Scrollbar Customization */
+.modal-content::-webkit-scrollbar {
+    width: 8px; /* Narrow scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #888; /* Grey thumb */
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker on hover */
+}
+
+/* Ensuring Smooth Transitions */
+body.modal-open {
+    overflow: hidden; /* Prevent body scroll */
+}

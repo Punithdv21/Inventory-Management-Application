@@ -1,0 +1,42 @@
+/* SiteEngineerSidebar.css */
+
+.custom-sidebar {
+  background: #001529; /* Dark background color */
+  height: 100vh; /* Full height */
+  position: fixed; /* Fixed position */
+  left: 0; /* Left side of the screen */
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  color: #fff; /* White logo text color */
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.ant-layout-sider-trigger {
+  background: #002140; /* Darker background for collapsed trigger */
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #1890ff; /* Selected menu item background color */
+}
+
+.ant-menu-dark .ant-menu-item-selected a {
+  color: #fff; /* Selected menu item text color */
+}
+
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-submenu-title {
+  color: #fff; /* Menu item text color */
+}
+
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-submenu-title:hover {
+  background-color: #1890ff; /* Hovered menu item background color */
+}
+
+.ant-menu-dark .ant-menu-item-icon {
+  color: #fff; /* Menu item icon color */
+}

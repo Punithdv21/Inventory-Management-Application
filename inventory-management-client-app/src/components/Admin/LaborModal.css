@@ -1,0 +1,101 @@
+/* Modal Styles */
+.labor-modal .ant-modal-content {
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Header */
+.labor-modal .ant-modal-header {
+    background-color: #1890ff;
+    border: none;
+    border-radius: 12px 12px 0 0;
+    padding: 16px 24px;
+    text-align: center;
+}
+
+.labor-modal .ant-modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Modal Body */
+.labor-modal .ant-modal-body {
+    padding: 24px;
+}
+
+/* Form Item Styles */
+.labor-modal-form .ant-form-item-label > label {
+    font-weight: 600;
+    color: #555;
+}
+
+.labor-modal-form .ant-form-item {
+    margin-bottom: 24px;
+}
+
+.labor-modal-form .ant-input,
+.labor-modal-form .ant-input-number,
+.labor-modal-form .ant-input-textarea {
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+}
+
+.labor-modal-form .ant-input:focus,
+.labor-modal-form .ant-input:hover,
+.labor-modal-form .ant-input-number:focus,
+.labor-modal-form .ant-input-number:hover,
+.labor-modal-form .ant-input-textarea:focus,
+.labor-modal-form .ant-input-textarea:hover {
+    border-color: #1890ff;
+    box-shadow: 0 0 8px rgba(24, 144, 255, 0.4);
+}
+
+/* Button Styles */
+.labor-modal-submit-button {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    font-weight: 600;
+    border-radius: 8px;
+    height: 48px;
+    font-size: 18px;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.labor-modal-submit-button:hover,
+.labor-modal-submit-button:focus {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.labor-modal-cancel-button {
+    background-color: #fff;
+    border-color: #ddd;
+    font-weight: 600;
+    border-radius: 8px;
+    height: 48px;
+    font-size: 18px;
+    color: #555;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.labor-modal-cancel-button:hover,
+.labor-modal-cancel-button:focus {
+    background-color: #f5f5f5;
+    border-color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .labor-modal .ant-modal-body {
+        padding: 16px;
+    }
+
+    .labor-modal-submit-button,
+    .labor-modal-cancel-button {
+        width: 100%;
+    }
+}
