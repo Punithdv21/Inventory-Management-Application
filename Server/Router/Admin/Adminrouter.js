@@ -20,15 +20,13 @@ router.route('/adminrefresh').get(refreshtoken,  AdminController.currentAdmin);
 
 
 //FOR ADMIN CRUDS
-router.route('/adminsignin').get(adminCrud.getadmin);
+router.route('/alladmin').get(adminCrud.getadmin);
 
 router.route('/adminid/:id').get(adminValidation, adminCrud.adminbyid);
 
 router.route('/updateadmin/:id').put(adminValidation, adminCrud.updateadmin);
 
 router.route('/deleteadmin/:id').delete(adminValidation, adminCrud.deleteadmin);
-
-router.route('/adminsignin').get(adminCrud.getadmin);
 
 router.route('/refreshadminid/:id').get(refreshtoken, adminCrud.adminbyid);
 
